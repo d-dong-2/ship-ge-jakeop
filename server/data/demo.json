@@ -1,0 +1,296 @@
+{
+ "vessels": {
+  "blueocean": {
+   "name": "MV 블루오션",
+   "type": "메탄올 이중연료 컨테이너선"
+  },
+  "coralstar": {
+   "name": "MV 코랄스타",
+   "type": "중유 전용 컨테이너선"
+  },
+  "greenwave": {
+   "name": "MV 그린웨이브",
+   "type": "메탄올 이중연료, 블루오션의 동형선"
+  },
+  "seabreeze": {
+   "name": "MV 씨브리즈",
+   "type": "메탄올 이중연료, 블루오션의 동형선"
+  }
+ },
+ "equip": {
+  "FU-01": {
+   "name": "연료 차단 밸브 V-434",
+   "area": "기관실 · 연료 계통"
+  },
+  "BO-02": {
+   "name": "보조 보일러 버너",
+   "area": "기관실 · 보일러 계통"
+  }
+ },
+ "tasks": {
+  "overhaul": "분해 · 조립 정비",
+  "inspect": "정기 점검"
+ },
+ "guide": {
+  "FU-01|overhaul": {
+   "ko": [
+    {
+     "t": "작업 전 불활성화(퍼징) 먼저",
+     "b": "중유 전용선에는 없던 절차입니다. 밸브를 열기 전에 질소로 배관을 밀어내고 남은 가스 농도를 잽니다.",
+     "src": [
+      {
+       "doc": "연료공급장치 매뉴얼",
+       "page": 142,
+       "quote": "밸브 분해 전 해당 구간을 질소로 퍼징하고, 잔류 메탄올 증기 농도가 기준 이하인지 확인한다."
+      }
+     ]
+    },
+    {
+     "t": "작업 구역 가스 감지 확인",
+     "b": "휴대용 가스 감지기를 켜고 작업 구역에 둔 채로 작업합니다.",
+     "src": [
+      {
+       "doc": "선사 안전관리 절차서 FS-07",
+       "page": 4,
+       "quote": "메탄올 연료 계통 작업 시 휴대용 가스 감지기를 작업 위치에 상시 비치한다."
+      }
+     ]
+    },
+    {
+     "t": "밸브 제조사와 볼트 조임 기준이 다름",
+     "b": "전에 탄 배는 A사 밸브, 지금 배는 B사 밸브입니다. 플랜지 볼트 조임 토크 기준이 다릅니다.",
+     "src": [
+      {
+       "doc": "B사 밸브 매뉴얼",
+       "page": 37,
+       "quote": "표 4-2 플랜지 볼트 체결 토크 기준 (M16, 교차 순서로 3회 나누어 체결)."
+      }
+     ]
+    }
+   ],
+   "en": [
+    {
+     "t": "Purge before opening",
+     "b": "Not required on your previous HFO-only ship. Purge the line with nitrogen and check residual vapour before opening the valve.",
+     "src": [
+      {
+       "doc": "Fuel supply system manual",
+       "page": 142,
+       "quote": "Before dismantling the valve, purge the section with nitrogen and confirm residual methanol vapour is below the limit."
+      }
+     ]
+    },
+    {
+     "t": "Gas detection in the work area",
+     "b": "Keep a portable gas detector switched on at the work position.",
+     "src": [
+      {
+       "doc": "Company safety procedure FS-07",
+       "page": 4,
+       "quote": "A portable gas detector shall be kept at the work position during work on the methanol fuel system."
+      }
+     ]
+    },
+    {
+     "t": "Different valve maker and bolt torque",
+     "b": "Previous ship: maker A. This ship: maker B. Flange bolt torque values differ.",
+     "src": [
+      {
+       "doc": "Maker B valve manual",
+       "page": 37,
+       "quote": "Table 4-2 flange bolt torque (M16, tighten crosswise in three steps)."
+      }
+     ]
+    }
+   ]
+  },
+  "FU-01|inspect": {
+   "ko": [
+    {
+     "t": "점검 주기가 다름",
+     "b": "지금 배는 메탄올 계통이라 밀봉부 누설 점검을 더 자주 합니다.",
+     "src": [
+      {
+       "doc": "정비관리 시스템(PMS) 점검 계획",
+       "page": 12,
+       "quote": "FU-01 밀봉부 누설 점검: 매월."
+      }
+     ]
+    }
+   ],
+   "en": [
+    {
+     "t": "Different inspection interval",
+     "b": "Seal leak checks are more frequent on the methanol system.",
+     "src": [
+      {
+       "doc": "PMS inspection plan",
+       "page": 12,
+       "quote": "FU-01 seal leak check: monthly."
+      }
+     ]
+    }
+   ]
+  },
+  "BO-02|overhaul": {
+   "ko": [
+    {
+     "t": "달라진 점 없음",
+     "b": "두 배의 보일러 버너는 같은 제조사·같은 모델이며 정비 절차도 같습니다.",
+     "src": [
+      {
+       "doc": "보일러 매뉴얼",
+       "page": 58,
+       "quote": "버너 분해 절차 (두 배 동일 문서)."
+      }
+     ]
+    }
+   ],
+   "en": [
+    {
+     "t": "No differences",
+     "b": "Both ships use the same burner model and the same procedure.",
+     "src": [
+      {
+       "doc": "Boiler manual",
+       "page": 58,
+       "quote": "Burner overhaul procedure (same document on both ships)."
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "v2diff": {
+  "ko": {
+   "t": "공구 변경: 오프셋 토크렌치 어댑터 사용",
+   "b": "배관 간격이 좁은 구간은 어댑터를 써서 규정 토크로 조입니다. 작업 전 인접 배관 간격을 확인합니다.",
+   "src": [
+    {
+     "doc": "정비 지침 2판 (공무감독 확정)",
+     "page": 3,
+     "quote": "4항: 간격 협소 구간은 오프셋 토크렌치 어댑터를 사용한다."
+    }
+   ]
+  },
+  "en": {
+   "t": "Tool change: offset torque wrench adapter",
+   "b": "Use the adapter where pipe clearance is tight, and check clearance before work.",
+   "src": [
+    {
+     "doc": "Maintenance instruction rev.2",
+     "page": 3,
+     "quote": "Item 4: use an offset torque wrench adapter in narrow-clearance sections."
+    }
+   ]
+  }
+ },
+ "cases": {
+  "FU-01": [
+   {
+    "ship": "MV 그린웨이브",
+    "date": "2026년 3월",
+    "t": "플랜지 볼트에 토크렌치가 들어가지 않음",
+    "cause": "인접 배관과 간격이 좁아 렌치 머리가 들어갈 공간 부족",
+    "fix": "오프셋 토크렌치 어댑터로 조임 (기관장 확정)"
+   }
+  ],
+  "BO-02": []
+ },
+ "ask": [
+  {
+   "k": [
+    "토크",
+    "조임"
+   ],
+   "a": "B사 매뉴얼 표 4-2의 M16 플랜지 볼트 기준을 따르고, 교차 순서로 3회 나누어 조입니다.",
+   "src": {
+    "doc": "B사 밸브 매뉴얼",
+    "page": 37
+   }
+  },
+  {
+   "k": [
+    "퍼징",
+    "질소"
+   ],
+   "a": "잔류 메탄올 증기 농도가 기준 이하로 내려갈 때까지 퍼징하고, 가스 감지기로 확인한 뒤 엽니다.",
+   "src": {
+    "doc": "연료공급장치 매뉴얼",
+    "page": 142
+   }
+  }
+ ],
+ "alerts": [
+  {
+   "id": "A-1",
+   "type": "연료 차단 밸브 플랜지 공구 공간 부족",
+   "code": "FU-01",
+   "ships": [
+    "MV 그린웨이브",
+    "MV 씨브리즈"
+   ],
+   "status": "반복"
+  },
+  {
+   "id": "A-2",
+   "type": "보조 보일러 버너 점화 지연",
+   "code": "BO-02",
+   "ships": [
+    "MV 코랄스타"
+   ],
+   "status": "검토 중"
+  }
+ ],
+ "similar": {
+  "A-1": [
+   {
+    "ship": "MV 그린웨이브",
+    "date": "2026년 3월",
+    "t": "토크렌치 진입 불가, 어댑터로 조임"
+   },
+   {
+    "ship": "MV 씨브리즈",
+    "date": "2026년 6월",
+    "t": "같은 위치에서 볼트 조임 지연 (정비 2시간 추가)"
+   }
+  ],
+  "A-2": [
+   {
+    "ship": "MV 코랄스타",
+    "date": "2026년 8월",
+    "t": "점화 지연, 노즐 청소 후 정상"
+   }
+  ]
+ },
+ "drafts": {
+  "A-1": {
+   "v1": "4. 플랜지 볼트를 규정 토크로 조인다.<br><del>공구: 표준 토크렌치</del>",
+   "v2": "4. 플랜지 볼트를 규정 토크로 조인다.<br><ins>공구: 오프셋 토크렌치 어댑터 (간격이 좁은 구간)</ins><br><ins>주의: 작업 전 인접 배관 간격 확인</ins>",
+   "evidence": "근거: 동형선 결함 보고 3건, B사 밸브 매뉴얼 p.37"
+  },
+  "A-2": {
+   "v1": "7. 버너 노즐을 점검한다.",
+   "v2": "7. 버너 노즐을 점검한다.<br><ins>점화 지연이 보고되면 노즐을 청소하고 점화 시간을 기록한다.</ins>",
+   "evidence": "근거: 결함 보고 1건 (아직 반복 기준 미만)"
+  }
+ },
+ "checks": [
+  {
+   "t": "연료 공급 모듈 주변 점검 통로 폭",
+   "note": "도면 반영 확인 · 이전에 등록된 사항",
+   "ok": true
+  },
+  {
+   "t": "메탄올 계통 가스 감지기 위치",
+   "note": "도면 반영 확인 · 이전에 등록된 사항",
+   "ok": true
+  }
+ ],
+ "newCheck": {
+  "t": "연료 차단 밸브 플랜지 주변 공구 작업 공간 확보",
+  "note": "근거: 운항선 3척 결함 보고, 정비 지침 2판",
+  "ok": false
+ },
+ "letter": "<b>도면 번호 FU-01-03 (연료 계통 배관 배치도)에 대한 의견</b><br>연료 차단 밸브 V-434 플랜지 주변에 토크렌치 작업 공간을 확보해 주시기 바랍니다. 운항 중인 동형선 3척에서 같은 위치의 공구 진입 불가가 보고되었습니다.<br><span class=\"muted\">첨부: 결함 보고 3건, 정비 지침 2판</span>"
+}
